@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SenderDoc" rowHeight="276" id="KGk-i7-Jjw" customClass="SenderDoc" customModule="JabyJob" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="276"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="276"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="89Q-WX-DY0">
+                        <rect key="frame" x="50" y="16" width="253.5" height="244"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nothing planned, and you?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFB-8l-0Xo">
+                                <rect key="frame" x="15" y="14" width="118.5" height="203"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14:34" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5n-sH-9xZ">
+                                <rect key="frame" x="210.5" y="208" width="28" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="9XH-r6-aYh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
+                                <color key="textColor" red="0.80001085999999999" green="0.79998052119999996" blue="0.80000108479999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b0d-W7-BCq">
+                                <rect key="frame" x="90.5" y="76.5" width="73" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="8Pc-wU-86I"/>
+                                    <constraint firstAttribute="width" constant="73" id="FAU-NA-tDa"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="brownishGrey"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ZFB-8l-0Xo" secondAttribute="trailing" constant="70" id="1fn-Up-qFl"/>
+                            <constraint firstItem="ZFB-8l-0Xo" firstAttribute="leading" secondItem="89Q-WX-DY0" secondAttribute="leading" constant="15" id="2Ix-iE-agI"/>
+                            <constraint firstAttribute="height" constant="244" id="5XI-xy-Uo7"/>
+                            <constraint firstItem="ZFB-8l-0Xo" firstAttribute="top" secondItem="89Q-WX-DY0" secondAttribute="top" constant="14" id="8Jh-rK-Cly"/>
+                            <constraint firstItem="b0d-W7-BCq" firstAttribute="centerX" secondItem="89Q-WX-DY0" secondAttribute="centerX" id="SH8-J2-Y8a"/>
+                            <constraint firstAttribute="bottom" secondItem="ZFB-8l-0Xo" secondAttribute="bottom" constant="14" id="SLm-bt-oEt"/>
+                            <constraint firstAttribute="bottom" secondItem="P5n-sH-9xZ" secondAttribute="bottom" constant="15" id="Zeu-0L-Fj5"/>
+                            <constraint firstAttribute="trailing" secondItem="P5n-sH-9xZ" secondAttribute="trailing" constant="15" id="cai-2M-B1e"/>
+                            <constraint firstItem="b0d-W7-BCq" firstAttribute="centerY" secondItem="89Q-WX-DY0" secondAttribute="centerY" id="kdb-59-Oij"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ZFB-8l-0Xo"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="89Q-WX-DY0" secondAttribute="trailing" constant="16.5" id="E4D-Ym-nFj"/>
+                    <constraint firstItem="89Q-WX-DY0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="PZb-TX-VJg"/>
+                    <constraint firstItem="89Q-WX-DY0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="dwT-Bc-vJ1"/>
+                    <constraint firstAttribute="bottom" secondItem="89Q-WX-DY0" secondAttribute="bottom" constant="16" id="zRn-9h-m77"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bgView" destination="89Q-WX-DY0" id="rOe-NT-nVg"/>
+                <outlet property="pdfImg" destination="b0d-W7-BCq" id="ppG-wm-S0q"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="brownishGrey">
+            <color red="0.39599999785423279" green="0.39599999785423279" blue="0.39599999785423279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

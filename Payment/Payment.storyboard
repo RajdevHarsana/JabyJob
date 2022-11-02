@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Payment View-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PaymentView" id="Y6W-OH-hqX" customClass="PaymentView" customModule="JabyJob" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCC-Sv-WNU">
+                                <rect key="frame" x="0.0" y="104" width="414" height="792"/>
+                                <subviews>
+                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aoK-xb-rcH">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="828"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <wkWebViewConfiguration key="configuration">
+                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                            <wkPreferences key="preferences"/>
+                                        </wkWebViewConfiguration>
+                                    </wkWebView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="792" id="9Va-b2-PbR"/>
+                                    <constraint firstItem="aoK-xb-rcH" firstAttribute="leading" secondItem="hCC-Sv-WNU" secondAttribute="leading" id="Jsn-XT-7um"/>
+                                    <constraint firstAttribute="trailing" secondItem="aoK-xb-rcH" secondAttribute="trailing" id="hO2-p5-RJv"/>
+                                    <constraint firstAttribute="bottom" secondItem="aoK-xb-rcH" secondAttribute="bottom" constant="-36" id="isO-6T-tPb"/>
+                                    <constraint firstItem="aoK-xb-rcH" firstAttribute="top" secondItem="hCC-Sv-WNU" secondAttribute="top" id="z4a-x9-rdj"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vj4-S0-3yY">
+                                <rect key="frame" x="20" y="44" width="57" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="08x-Io-jFX"/>
+                                    <constraint firstAttribute="width" constant="57" id="nfY-pI-fxl"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="chevron-left"/>
+                                <connections>
+                                    <action selector="didTapBack:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6hY-K0-Glb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="twilightBlue - Two"/>
+                        <constraints>
+                            <constraint firstItem="hCC-Sv-WNU" firstAttribute="top" secondItem="vj4-S0-3yY" secondAttribute="bottom" constant="18" id="DId-3R-NQc"/>
+                            <constraint firstAttribute="bottom" secondItem="hCC-Sv-WNU" secondAttribute="bottom" id="I6c-IN-oEc"/>
+                            <constraint firstItem="vj4-S0-3yY" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="20" id="Ixj-6X-KrM"/>
+                            <constraint firstItem="hCC-Sv-WNU" firstAttribute="trailing" secondItem="5EZ-qb-Rvc" secondAttribute="trailing" id="KNO-sW-DtI"/>
+                            <constraint firstItem="vj4-S0-3yY" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="44" id="Lv0-X1-Eh8"/>
+                            <constraint firstItem="hCC-Sv-WNU" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="mub-J1-itl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webContentView" destination="hCC-Sv-WNU" id="4Qn-xp-ewX"/>
+                        <outlet property="webView" destination="aoK-xb-rcH" id="EOQ-Kj-DQz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-14.492753623188406" y="42.857142857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron-left" width="9.5" height="16.5"/>
+        <namedColor name="twilightBlue - Two">
+            <color red="0.039000000804662704" green="0.21199999749660492" blue="0.41600000858306885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

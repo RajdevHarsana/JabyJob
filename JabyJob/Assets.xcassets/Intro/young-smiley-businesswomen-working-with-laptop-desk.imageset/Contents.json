@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "young-smiley-businesswomen-working-with-laptop-desk.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "young-smiley-businesswomen-working-with-laptop-desk@2x.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "young-smiley-businesswomen-working-with-laptop-desk@3x.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

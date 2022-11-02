@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.114581213246-00giou2257l5ci5322mrht7r5sa77l2a</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>Bundel ID</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>jabyjob.com.JabyJob</string>
+			</array>
+		</dict>
+	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>whatsapp</string>
+	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Montserrat-ExtraBold</string>
+		<string>Montserrat-Bold</string>
+		<string>Montserrat-ExtraLight</string>
+		<string>Montserrat-Light</string>
+		<string>Montserrat-Medium</string>
+		<string>Montserrat-Regular</string>
+		<string>Montserrat-SemiBold</string>
+		<string>Montserrat-Thin</string>
+		<string>Montserrat-SemiBoldItalic</string>
+		<string>Montserrat-BoldItalic</string>
+		<string>Montserrat-MediumItalic</string>
+		<string>FontsFree-Net-ProximaNova-Regular</string>
+		<string>Montserrat-LightItalic</string>
+		<string>Raleway-Medium</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+		<string>fetch</string>
+		<string>processing</string>
+		<string>remote-notification</string>
+	</array>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
+	<key>statusBarManager</key>
+	<string></string>
+</dict>
+</plist>
